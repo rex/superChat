@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Gotham Book";
+}
+body {
+	background: #dddddd;
+	text-align:center;
+}
+a {
+	color:#eeeeee;
+	text-decoration: none;
+}
+a:hover {
+	color: #ffffff;
+}
+
+input[type=submit].superchat_input_submit {
+	padding: 3px 5px 3px 5px;
+}
+.main {
+	width:800px;
+	margin: auto;
+	padding:10px;
+	border: 1px #aaaaaa solid;
+	background:#eeeeee;
+}
+
+#superchat_container {
+	width:100%;
+	height:50px;
+	margin: auto;
+	position:fixed;
+	bottom:0;
+	z-index: 100;
+}
+#superchat_content {
+	width:995px;
+	height: 55px;
+	padding-left:1px;
+	padding-top:5px;
+	position:relative;
+	margin: auto;
+	background: url('images/superChat_container_bg.png') no-repeat top center;
+}
+#superchat_settings, #superchat_view {
+	position:relative;
+	margin-top:1px;
+	width:44px;
+	height:44px;
+	float:right;
+}
+#superchat_settings a, #superchat_view a {
+	width:44px;
+	height:44px;
+	display:block;
+	float:right;
+	background:url('images/superchat_add_bg.png') no-repeat left;
+}
+#superchat_view a{
+	background: url('images/superchat_view_bg.png') no-repeat left;
+}
+#superchat_settings a:hover,#superchat_view a:hover {
+	background-position: -44px 0;
+}
+#superchat_settings a.superchat_settings_active {
+	background: url('images/superchat_add_bg.png') no-repeat;
+	background-position: -88px 0;
+} 
+#superchat_view a.superchat_view_active {
+	background: url('images/superchat_view_bg.png') no-repeat;
+	background-position: -88px 0;
+}
+#superchat_chats {
+	width: 907px;
+	float:left;
+}
+#superchat_chats  a { 
+	display:block;
+	float:left;
+	width: 150px;
+	height: 35px;
+	padding-top:15px;
+	background: url('images/superchat_chat_container_min.png') no-repeat top left;
+}
+
+#superchat_chats a:hover {	
+	background-position: -150px 0;
+}
+
+#superchat_chats  a.chat_name_active {
+	background-position: -300px 0;
+}
+
+#superchat_chat_boxes .chat_box {
+	display:none;
+	width: 180px;
+	height: 280px;
+	padding:10px;
+	position:absolute;
+	z-index: 75;
+	margin-top: -305px;
+	margin-left: -20px;
+	background:url('images/superChat_popup_bg.png') no-repeat top center;
+}
+
+#superchat_chat_boxes .chat_box textarea {
+	width: 100%;
+	height:40px;
+}
+
+#superchat_chat_boxes .chat_box .tab_content {
+	width:100%;
+	height:200px;
+	margin-bottom:3px;
+	border:1px #aaaaaa solid;
+	background:#ffffff;
+	overflow-y:scroll;
+}
+
+#superchat_chat_boxes .chat_box .tab_name {
+	text-align:left;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: -1px;
+}
